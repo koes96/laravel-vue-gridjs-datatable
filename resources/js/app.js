@@ -6,7 +6,7 @@ import { Vue } from 'vue-property-decorator';
 // import ModalWizard from 'vue-modal-wizard'
 // Vue.component('Modal', VueModal)
 import Grid from 'gridjs-vue'
-import Vue from 'vue'
+//import Vue from 'vue'
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'

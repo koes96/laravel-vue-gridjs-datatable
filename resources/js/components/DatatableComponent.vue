@@ -17,7 +17,7 @@
 
 <script>
 import Grid from 'gridjs-vue'
-import { h } from "gridjs";
+import { h,html } from "gridjs";
 export default {
     name: 'Data',
     components: {
@@ -40,7 +40,7 @@ export default {
                     formatter: (cell, row) => {
                         return h('button', {
                             className: 'py-2 mb-4 px-4 border rounded-md text-black bg-blue-600', 
-                            onclick: () => alert(`Editing "${row.cells[0].data}""${row.cells[1].data}"`)
+                            onclick: () => alert(`Editing "${row.cells[0].data}"..."${row.cells[1].data}"`)
                         }, 'Edit');
                     }
                 },
