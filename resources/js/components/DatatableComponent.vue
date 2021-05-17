@@ -1,4 +1,5 @@
 <template>
+<div>
     <grid 
     :cols="cols"
     :search="search"
@@ -6,13 +7,19 @@
     :server="server"
     :pagination="pagination"
     ></grid>
+<b-button v-b-modal.modal-1>Launch demo modal</b-button>
+
+  <b-modal id="modal-1" title="BootstrapVue">
+    <p class="my-4">Hello from modal!</p>
+  </b-modal>
+</div>
 </template>
 
 <script>
 import Grid from 'gridjs-vue'
 import { h } from "gridjs";
 export default {
-    name: 'Cars',
+    name: 'Data',
     components: {
         Grid
     },
@@ -45,7 +52,7 @@ export default {
             },
             search: true,
             sort:true,
-            pagination: true
+            pagination: true,
         }
     }
 }
